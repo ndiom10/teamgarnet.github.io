@@ -3,60 +3,101 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI and Deskilling in Education | Team Garnet</title>
+<title>AI and Deskilling in Education | Home</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,Arial,sans-serif;background:#0f1115;color:#f5f5f5;line-height:1.6}
-header{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:2rem;background:linear-gradient(135deg,#7a0019,#111827)}
-.hero{max-width:900px}
-.badge{display:inline-block;padding:.4rem .8rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;margin-bottom:1rem;font-size:.9rem}
-h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;margin-bottom:1rem}
-p.lead{font-size:1.2rem;opacity:.9;max-width:700px;margin:0 auto 2rem}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#0b0f17;color:#eef2f7;line-height:1.6}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937}
+.navwrap{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem}
+.logo{font-weight:800;letter-spacing:.5px}
+nav ul{display:flex;gap:1rem;list-style:none;flex-wrap:wrap}
+nav a{color:#eef2f7;text-decoration:none;font-size:.95rem;opacity:.9}
+nav a:hover{opacity:1}
+header{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:7rem 1.5rem 3rem;background:radial-gradient(circle at top right,#7a0019 0,#111827 40%,#0b0f17 75%)}
+.hero{max-width:950px;text-align:center}
+.badge{display:inline-block;padding:.45rem .9rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;margin-bottom:1rem;font-size:.9rem}
+h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.05;margin-bottom:1rem}
+.lead{font-size:1.2rem;max-width:760px;margin:0 auto 1.8rem;opacity:.92}
 .buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-a.btn{padding:.9rem 1.4rem;border-radius:12px;text-decoration:none;font-weight:700}
-.primary{background:#fff;color:#111}
-.secondary{border:1px solid rgba(255,255,255,.3);color:#fff}
-section{padding:5rem 1.5rem}
-.wrap{max-width:1100px;margin:auto}
+.btn{padding:.95rem 1.35rem;border-radius:14px;text-decoration:none;font-weight:700}
+.primary{background:#fff;color:#111827}.secondary{border:1px solid rgba(255,255,255,.28);color:#fff}
+section{padding:5rem 1.5rem}.wrap{max-width:1150px;margin:auto}
+.section-title{font-size:2rem;margin-bottom:.7rem}.muted{opacity:.82}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2rem}
-.card{background:#171a21;padding:1.4rem;border-radius:18px;border:1px solid #252a34}
-.card h3{margin-bottom:.6rem;color:#fff}
-.muted{opacity:.8}
-footer{padding:2rem;text-align:center;border-top:1px solid #222}
+.card{background:#121826;border:1px solid #243042;padding:1.4rem;border-radius:18px}
+.card h3{margin-bottom:.55rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}
+.stat{background:#121826;padding:1.2rem;border-radius:18px;border:1px solid #243042;text-align:center}
+.stat b{display:block;font-size:2rem}
+footer{padding:2rem;text-align:center;border-top:1px solid #1f2937;color:#cbd5e1}
+@media(max-width:760px){nav ul{gap:.6rem} .navwrap{align-items:flex-start;flex-direction:column;gap:.75rem}}
 </style>
 </head>
 <body>
+  
+<nav>
+<div class="navwrap">
+<div class="logo">Team Garnet</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="background.html">Background</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="analysis.html">Analysis</a></li>
+<li><a href="conclusion.html">Conclusion</a></li>
+</ul>
+</div>
+</nav>
+  
 <header>
-  <div class="hero">
-    <div class="badge">University of Virginia • Team Garnet</div>
-    <h1>AI and Deskilling in Education</h1>
-    <p class="lead">Exploring how artificial intelligence is reshaping learning, writing, critical thinking, and the college experience.</p>
-    <div class="buttons">
-      <a href="#about" class="btn primary">Explore Project</a>
-      <a href="#findings" class="btn secondary">Key Findings</a>
-    </div>
-  </div>
+<div class="hero">
+<div class="badge">University of Virginia • CS 4501 AI & Humanity</div>
+<h1>AI and Deskilling in Education</h1>
+<p class="lead">A research project exploring whether artificial intelligence enhances learning or quietly weakens critical academic skills through overreliance, cognitive offloading, and automation.</p>
+<div class="buttons">
+<a class="btn primary" href="research.html">View Findings</a>
+<a class="btn secondary" href="#about">Learn More</a>
+</div>
+</div>
 </header>
+  
 <section id="about">
-  <div class="wrap">
-    <h2>About the Project</h2>
-    <p class="muted">Our research examines whether heavy AI use supports student success or gradually weakens core academic skills through cognitive offloading and overreliance.</p>
-    <div class="grid">
-      <div class="card"><h3>Critical Thinking</h3><p>Does outsourcing reasoning reduce independent analysis?</p></div>
-      <div class="card"><h3>Writing</h3><p>How are language patterns and originality changing?</p></div>
-      <div class="card"><h3>Problem Solving</h3><p>Do students persist through struggle less often?</p></div>
-      <div class="card"><h3>Opportunity</h3><p>Can AI become a tutor instead of a shortcut?</p></div>
-    </div>
-  </div>
+<div class="wrap">
+<h2 class="section-title">Abstract</h2>
+<p class="muted">This project examines how AI tools are changing student learning, writing, reasoning, and confidence. Through comparative research and meta-analysis, Team Garnet investigates whether AI shifts skill distribution productively or contributes to deskilling and skill erosion.</p>
+<div class="stats">
+<div class="stat"><b>5</b>Team Members</div>
+<div class="stat"><b>10+</b>Sources Reviewed</div>
+<div class="stat"><b>4</b>Main Risk Areas</div>
+<div class="stat"><b>2026</b>Research Project</div>
+</div>
+</div>
 </section>
-<section id="findings">
-  <div class="wrap">
-    <h2>Research Direction</h2>
-    <p class="muted">We compare benefits like tutoring, accessibility, and productivity with risks such as dependency, skill erosion, and illusion of competence.</p>
-  </div>
+  
+<section>
+<div class="wrap">
+<h2 class="section-title">Core Questions</h2>
+<div class="grid">
+<div class="card"><h3>Critical Thinking</h3><p>Does reliance on AI reduce independent reasoning and evaluation?</p></div>
+<div class="card"><h3>Writing Quality</h3><p>Are originality and language diversity being replaced by model-generated patterns?</p></div>
+<div class="card"><h3>Creativity</h3><p>Can AI support brainstorming without weakening authentic imagination?</p></div>
+<div class="card"><h3>Education Policy</h3><p>How should schools regulate AI to preserve learning outcomes?</p></div>
+</div>
+</div>
 </section>
-<footer>
-  Team Garnet • University of Virginia
-</footer>
+  
+<section>
+<div class="wrap">
+<h2 class="section-title">Navigate the Study</h2>
+<div class="grid">
+<div class="card"><h3>Background</h3><p>History of technology and definitions of deskilling.</p></div>
+<div class="card"><h3>Research</h3><p>Methodology, evidence, and major findings.</p></div>
+<div class="card"><h3>Analysis</h3><p>Comparative insights, student perspective, limitations.</p></div>
+<div class="card"><h3>Conclusion</h3><p>Recommendations, references, and future outlook.</p></div>
+</div>
+</div>
+</section>
+  
+<footer>Team Garnet • University of Virginia • AI & Humanity</footer>
 </body>
 </html>
