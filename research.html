@@ -2,100 +2,88 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research | AI and Deskilling</title>
-  
+
 <style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#0d1117;
-color:white;
-line-height:1.6;
+  font-family:Inter, Arial, sans-serif;
+  background:#0b0f17;
+  color:#eef2f7;
+  line-height:1.7;
 }
 
 nav{
-background:#161b22;
-padding:20px;
-display:flex;
-justify-content:center;
-gap:30px;
+  background:#111827;
+  padding:1rem 2rem;
+  border-bottom:1px solid #1f2937;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+  color:white;
+  text-decoration:none;
+  margin-right:1rem;
 }
 
 nav a:hover{
-color:#58a6ff;
+  color:#fca5a5;
 }
 
-header{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(to right,#161b22,#0d1117);
+.wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:4rem 1.5rem;
 }
 
-header h1{
-font-size:3rem;
-margin-bottom:10px;
+h1{
+  font-size:3rem;
+  margin-bottom:1rem;
 }
 
-header p{
-max-width:700px;
-margin:auto;
-color:#c9d1d9;
-}
-
-section{
-padding:60px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
+h2{
+  margin-top:2.5rem;
+  margin-bottom:.8rem;
+  color:#fca5a5;
 }
 
 .card{
-background:#161b22;
-padding:25px;
-border-radius:12px;
+  background:#121826;
+  padding:1.5rem;
+  border-radius:18px;
+  border:1px solid #243042;
+  margin-top:1rem;
 }
 
-.card h3{
-color:#58a6ff;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-text-align:center;
-margin-top:30px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1rem;
+  margin-top:1rem;
 }
 
 .stat{
-background:#161b22;
-padding:30px;
-border-radius:12px;
+  background:#121826;
+  padding:1.5rem;
+  border-radius:18px;
+  border:1px solid #243042;
+  text-align:center;
 }
 
-.stat h2{
-font-size:2rem;
-color:#58a6ff;
-margin:0;
+.stat h3{
+  font-size:2rem;
+  color:#fca5a5;
 }
 
 footer{
-text-align:center;
-padding:40px;
-color:#8b949e;
+  text-align:center;
+  padding:2rem;
+  color:#94a3b8;
 }
 </style>
 </head>
@@ -104,75 +92,96 @@ color:#8b949e;
 
 <nav>
 <a href="index.html">Home</a>
+<a href="background.html">Background</a>
 <a href="research.html">Research</a>
-<a href="findings.html">Findings</a>
-<a href="about.html">About</a>
+<a href="analysis.html">Analysis</a>
+<a href="conclusion.html">Conclusion</a>
 </nav>
 
-<header>
-<h1>Research & Findings</h1>
-<p>Exploring how artificial intelligence impacts student learning, critical thinking, writing, and cognitive independence.</p>
-</header>
+<div class="wrap">
 
-<section>
-<h2>About This Study</h2>
-<p>
-Team Garnet at the University of Virginia conducted a meta-analysis investigating whether AI enhances education or gradually weakens core academic skills through overreliance.
-</p>
+<h1>Research</h1>
 
 <p>
-Our work compares historical tools like calculators with modern AI systems like ChatGPT to understand how learning habits are changing.
+This study investigates whether artificial intelligence improves education or gradually weakens academic skills through overreliance.
 </p>
-</section>
 
-<section>
-<h2>Core Questions</h2>
+<h2>Methodology</h2>
+
+<div class="card">
+<p>
+Our team reviewed historical learning technologies, modern AI studies, survey data, and peer-reviewed academic research. We compared earlier tools like calculators with modern systems such as ChatGPT to evaluate educational impact.
+</p>
+</div>
+
+<h2>Key Findings</h2>
 
 <div class="grid">
-<div class="card"><h3>Critical Thinking</h3><p>Does AI reduce independent reasoning?</p></div>
 
-<div class="card"><h3>Writing</h3><p>How is originality changing?</p></div>
-
-<div class="card"><h3>Cognitive Offloading</h3><p>Are students outsourcing too much thinking?</p></div>
-
-<div class="card"><h3>Opportunity</h3><p>Can AI become a tutor instead of a shortcut?</p></div>
-</div>
-</section>
-
-<section>
-<h2>Key Statistics</h2>
-
-<div class="stats">
-<div class="stat">
-<h2>950K+</h2>
-<p>Academic papers analyzed</p>
+<div class="card">
+<h3>Cognitive Skills</h3>
+<p>
+Frequent AI dependence may reduce active reasoning, memory retention, and persistence through difficult tasks.
+</p>
 </div>
 
+<div class="card">
+<h3>Writing & Language</h3>
+<p>
+Recent studies found increasing AI-influenced language patterns in academic and professional writing.
+</p>
+</div>
+
+<div class="card">
+<h3>Educational Benefits</h3>
+<p>
+AI can provide tutoring support, personalized learning, accessibility tools, and teacher assistance.
+</p>
+</div>
+
+</div>
+
+<h2>Comparative Insight</h2>
+
+<div class="card">
+<p>
+Unlike calculators, AI performs higher-order tasks such as writing, summarizing, brainstorming, and reasoning. This creates major opportunities, but also higher risks of deskilling.
+</p>
+</div>
+
+<h2>Research Statistics</h2>
+
+<div class="grid">
+
 <div class="stat">
-<h2>17.5%</h2>
+<h3>950K+</h3>
+<p>Papers analyzed</p>
+</div>
+
+<div class="stat">
+<h3>17.5%</h3>
 <p>Growth in AI-modified CS writing</p>
 </div>
 
 <div class="stat">
-<h2>666</h2>
-<p>Participants in cognition study</p>
+<h3>666</h3>
+<p>Participants surveyed</p>
 </div>
-</div>
-</section>
 
-<section>
+</div>
+
 <h2>Conclusion</h2>
-<p>
-AI is not inherently harmful. The danger comes when students replace learning with automation.
-</p>
 
+<div class="card">
 <p>
-Used correctly, AI can increase access, tutoring, and efficiency. Used carelessly, it can erode the very skills education is meant to build.
+AI is most valuable when it supports learning rather than replacing struggle, reflection, and independent thought.
 </p>
-</section>
+</div>
+
+</div>
 
 <footer>
-University of Virginia • Team Garnet
+Team Garnet • University of Virginia
 </footer>
 
 </body>
