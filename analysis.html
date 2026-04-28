@@ -127,7 +127,33 @@ h2{
   color:#fca5a5;
   font-weight:700;
 }
-
+.spectrum{
+  margin-top:1rem;
+  background:#121826;
+  border:1px solid #243042;
+  border-radius:20px;
+  padding:1.5rem;
+}
+.spectrum-bar{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:.5rem;
+  margin-top:1rem;
+}
+.spectrum-step{
+  min-height:100px;
+  padding:1rem;
+  border-radius:16px;
+  background:#0f1624;
+  border:1px solid #243042;
+}
+.spectrum-step:first-child{border-color:#86efac}
+.spectrum-step:last-child{border-color:#ef4444}
+.spectrum-step b{
+  display:block;
+  margin-bottom:.4rem;
+  color:#fca5a5;
+}
 .site-footer{
   padding:2.25rem 1.5rem 1.5rem;
   border-top:1px solid #1f2937;
@@ -192,6 +218,7 @@ h2{
   nav ul{gap:.65rem;}
   .footer-wrap{grid-template-columns:1fr;}
   .team-grid{grid-template-columns:1fr;}
+  .spectrum-bar{grid-template-columns:1fr;}
 }
 @media(prefers-reduced-motion:reduce){
   .reveal-on-scroll{
@@ -201,6 +228,7 @@ h2{
   }
 }
 </style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -212,7 +240,7 @@ h2{
 <li><a href="index.html">Home</a></li>
 <li><a href="background.html">Background</a></li>
 <li><a href="research.html">Research</a></li>
-<li><a href="analysis.html">Analysis</a></li>
+<li><a class="active" href="analysis.html">Analysis</a></li>
 <li><a href="conclusion.html">Conclusion</a></li>
 </ul>
 </div>
@@ -285,6 +313,32 @@ Risk increases when AI becomes the first point of contact for summarizing short 
 
 </div>
 
+<h2>AI Use Spectrum</h2>
+
+<div class="spectrum">
+<p>
+The same tool can either support learning or replace it. The difference is how much thinking remains with the student.
+</p>
+<div class="spectrum-bar">
+<div class="spectrum-step">
+<b>Most Supportive</b>
+<p>Explaining a concept after an attempt.</p>
+</div>
+<div class="spectrum-step">
+<b>Supportive</b>
+<p>Outlining, feedback, or study guide creation.</p>
+</div>
+<div class="spectrum-step">
+<b>Risky</b>
+<p>Summarizing instead of reading or checking.</p>
+</div>
+<div class="spectrum-step">
+<b>Most Risky</b>
+<p>Generating final answers or full assignments.</p>
+</div>
+</div>
+</div>
+
 <h2>Where AI May Harm Growth</h2>
 
 <div class="grid">
@@ -321,7 +375,7 @@ Students may mistake AI-assisted performance for real understanding, producing p
 
 <h2>Comparison to Calculators</h2>
 
-<div class="card">
+<div class="card accent-left">
 <p>
 Calculators mainly automated arithmetic, a narrower task that still required students to understand the problem. AI can automate broader cognitive work such as writing, coding, summarizing, reasoning, and judgment. Because of this, historical calculator success does not automatically guarantee that AI will produce the same educational outcomes.
 </p>
@@ -337,7 +391,7 @@ Many students use AI because of academic pressure, time demands, and systems tha
 
 <h2>Team Garnet Position</h2>
 
-<div class="card">
+<div class="card accent-left">
 <p>
 Our analysis suggests AI should be treated as a support tool, not a replacement tool. The healthiest model is one where students think first, attempt first, and use AI second. Students should be able to explain what AI helped with, what they verified, and what they still did independently.
 </p>

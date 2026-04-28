@@ -142,6 +142,36 @@ h2{
   color:#94a3b8;
   font-size:.95rem;
 }
+.bar-list{
+  display:grid;
+  gap:1rem;
+  margin-top:1rem;
+}
+.bar-item strong{
+  display:block;
+  margin-bottom:.35rem;
+}
+.bar-track{
+  height:14px;
+  background:#1f2937;
+  border-radius:999px;
+  overflow:hidden;
+}
+.bar-fill{
+  display:block;
+  height:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg,#fca5a5,#ef4444);
+}
+.source-map{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+.source-map .card{
+  margin-top:0;
+}
 
 .site-footer{
   padding:2.25rem 1.5rem 1.5rem;
@@ -214,6 +244,7 @@ h2{
   }
 }
 </style>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
@@ -224,7 +255,7 @@ h2{
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="background.html">Background</a></li>
-<li><a href="research.html">Research</a></li>
+<li><a class="active" href="research.html">Research</a></li>
 <li><a href="analysis.html">Analysis</a></li>
 <li><a href="conclusion.html">Conclusion</a></li>
 </ul>
@@ -271,6 +302,26 @@ Because long-term educational AI data is still limited, our analysis focuses on 
 </div>
 </div>
 
+<h2>Scale of Evidence</h2>
+
+<div class="card">
+<div class="bar-list">
+<div class="bar-item">
+<strong>Computer science papers: up to 17.5% LLM-modified sentences</strong>
+<div class="bar-track"><span class="bar-fill" style="width:88%"></span></div>
+</div>
+<div class="bar-item">
+<strong>Mathematics and Nature papers: up to 6.3% LLM-modified sentences</strong>
+<div class="bar-track"><span class="bar-fill" style="width:32%"></span></div>
+</div>
+<div class="bar-item">
+<strong>Possibly hallucinated arXiv references: about 1 in 4,000</strong>
+<div class="bar-track"><span class="bar-fill" style="width:8%"></span></div>
+</div>
+</div>
+<p class="note">These bars are visual comparisons, not a single shared measurement scale.</p>
+</div>
+
 <h2>Timeline of Sources</h2>
 <div class="card" style="padding:1rem;">
   <img src="images/Screenshot 2026-04-27 223806.jpg" 
@@ -278,12 +329,37 @@ Because long-term educational AI data is still limited, our analysis focuses on 
        style="width:100%;border-radius:12px;display:block;">
 </div>
 
+<h2>Source Map</h2>
+
+<div class="source-map">
+<div class="card source-card">
+<span class="source-tag">Cognition</span>
+<h3>Gerlich, Favero, Yiğit</h3>
+<p>Critical thinking, agency, cognitive offloading, and long-term skill erosion.</p>
+</div>
+<div class="card source-card">
+<span class="source-tag">Writing</span>
+<h3>Liang, Galpin</h3>
+<p>LLM-modified scientific writing and AI-shaped language patterns.</p>
+</div>
+<div class="card source-card">
+<span class="source-tag">Verification</span>
+<h3>Tramèr</h3>
+<p>Hallucinated citations as evidence of weakened checking and source evaluation.</p>
+</div>
+<div class="card source-card">
+<span class="source-tag">History</span>
+<h3>Barton, Bridgeman</h3>
+<p>Calculator research used as a comparison point for earlier classroom technology.</p>
+</div>
+</div>
+
   
 <h2>Key Studies</h2>
 
 <div class="grid">
 
-<div class="card">
+<div class="card source-card">
 <span class="source-tag">Gerlich 2025</span>
 <h3>AI use, offloading, and critical thinking</h3>
 <p>
@@ -291,7 +367,7 @@ Gerlich found a negative correlation between frequent AI use and critical thinki
 </p>
 </div>
 
-<div class="card">
+<div class="card source-card">
 <span class="source-tag">Liang 2024</span>
 <h3>LLMs are changing academic writing</h3>
 <p>
@@ -299,7 +375,7 @@ Liang et al. analyzed nearly one million scientific papers and found a rapid ris
 </p>
 </div>
 
-<div class="card">
+<div class="card source-card">
 <span class="source-tag">Galpin 2025</span>
 <h3>Scientific language is shifting</h3>
 <p>
@@ -307,7 +383,7 @@ Galpin et al. found that AI influence appears in whole clusters of stylistic wor
 </p>
 </div>
 
-<div class="card">
+<div class="card source-card">
 <span class="source-tag">Tramèr 2025</span>
 <h3>Hallucinated citations reveal verification risk</h3>
 <p>

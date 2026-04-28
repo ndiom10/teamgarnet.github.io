@@ -192,6 +192,80 @@ h2{
 
 }
 
+.timeline{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+  gap:1rem;
+
+  margin-top:1rem;
+
+}
+
+.timeline-step{
+
+  position:relative;
+
+  background:linear-gradient(180deg,#151c2b,#101722);
+
+  border:1px solid #243042;
+
+  border-radius:18px;
+
+  padding:1.25rem;
+
+}
+
+.timeline-step b{
+
+  display:block;
+
+  color:#fca5a5;
+
+  margin-bottom:.45rem;
+
+}
+
+.compare-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+  gap:1rem;
+
+  margin-top:1rem;
+
+}
+
+.compare-card{
+
+  background:#121826;
+
+  border:1px solid #243042;
+
+  border-radius:18px;
+
+  padding:1.5rem;
+
+}
+
+.compare-card ul{
+
+  margin-top:.8rem;
+
+  padding-left:1.2rem;
+
+}
+
+.compare-card li{
+
+  margin-bottom:.35rem;
+
+}
+
 .site-footer{
 
   padding:2.25rem 1.5rem 1.5rem;
@@ -335,6 +409,7 @@ h2{
 }
 
 </style>
+<link rel="stylesheet" href="assets/style.css">
 
 </head>
 
@@ -350,7 +425,7 @@ h2{
 
 <li><a href="index.html">Home</a></li>
 
-<li><a href="background.html">Background</a></li>
+<li><a class="active" href="background.html">Background</a></li>
 
 <li><a href="research.html">Research</a></li>
 
@@ -373,6 +448,27 @@ h2{
 To understand whether artificial intelligence causes deskilling in education, it is necessary to examine earlier learning tools, define core concepts, and understand why AI may differ from previous technologies.
 
 </p>
+
+<h2>How Learning Tools Expanded</h2>
+
+<div class="timeline">
+
+<div class="timeline-step">
+<b>Calculators</b>
+<p>Automated arithmetic while still requiring students to understand what problem they were solving.</p>
+</div>
+
+<div class="timeline-step">
+<b>Internet Search</b>
+<p>Moved memory and information lookup outside the student, making verification and source judgment more important.</p>
+</div>
+
+<div class="timeline-step">
+<b>Generative AI</b>
+<p>Can now participate in writing, explanation, brainstorming, coding, and reasoning across subjects.</p>
+</div>
+
+</div>
 
 <h2>Historical Background</h2>
 
@@ -407,7 +503,8 @@ These findings matter because calculators mainly assisted computation. Artificia
 
 <h2>Defining Deskilling</h2>
 
-<div class="card">
+<div class="card definition-card">
+<span class="definition-badge">Definition</span>
 
 <p>
 
@@ -419,7 +516,8 @@ Deskilling occurs when reliance on technological systems begins to reduce existi
 
 <h2>Defining Cognitive Offloading</h2>
 
-<div class="card">
+<div class="card definition-card">
+<span class="definition-badge">Definition</span>
 
 <p>
 
@@ -430,7 +528,8 @@ Cognitive offloading refers to using external tools to reduce mental load. In mo
 
 <h2>Defining Skill Erosion</h2>
 
-<div class="card">
+<div class="card definition-card">
+<span class="definition-badge">Definition</span>
 
 <p>
 
@@ -448,7 +547,7 @@ Within education, this could affect critical thinking, creativity, writing fluen
 
 <h2>Why AI Is Different</h2>
 
-<div class="card">
+<div class="card accent-left">
 
 <p>
 
@@ -461,6 +560,30 @@ Earlier tools, like calculators, helped students complete narrow tasks. AI tools
 The central modern question is whether AI simply redistributes skills more efficiently—or whether it weakens the development of abilities students still need.
 
 </p>
+
+</div>
+
+<h2>What Gets Automated?</h2>
+
+<div class="compare-grid">
+
+<div class="compare-card">
+<h3>Earlier Tools</h3>
+<ul>
+<li>Arithmetic and computation</li>
+<li>Information storage and lookup</li>
+<li>Repetitive or narrow tasks</li>
+</ul>
+</div>
+
+<div class="compare-card">
+<h3>Generative AI</h3>
+<ul>
+<li>Writing and summarizing</li>
+<li>Reasoning and explaining</li>
+<li>Brainstorming and judgment</li>
+</ul>
+</div>
 
 </div>
 

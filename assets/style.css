@@ -1,0 +1,106 @@
+/* Shared site polish: navigation, footer, card variants, and readable text widths. */
+:root{
+  --bg:#0b0f17;
+  --panel:#121826;
+  --panel-2:#0f1624;
+  --border:#243042;
+  --text:#eef2f7;
+  --muted:#cbd5e1;
+  --soft:#94a3b8;
+  --accent:#fca5a5;
+  --garnet:#7a0019;
+}
+
+nav a.active{
+  color:var(--accent);
+  opacity:1;
+}
+
+.wrap > p,
+.card p,
+.compare-card p,
+.timeline-step p,
+.spectrum p,
+.decision-item p,
+.check-item p{
+  max-width:72ch;
+}
+
+.card,
+.compare-card,
+.timeline-step,
+.stat,
+.spectrum,
+.decision-item,
+.check-item,
+.ref-details{
+  box-shadow:0 18px 50px rgba(0,0,0,.14);
+}
+
+.card.accent-left,
+.compare-card{
+  border-left:4px solid var(--accent);
+}
+
+.definition-card{
+  position:relative;
+}
+
+.definition-badge{
+  display:inline-block;
+  margin-bottom:.7rem;
+  padding:.25rem .6rem;
+  border-radius:999px;
+  background:rgba(252,165,165,.12);
+  color:var(--accent);
+  font-size:.74rem;
+  font-weight:800;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.source-card{
+  border-top:3px solid rgba(252,165,165,.75);
+}
+
+.recommendation-grid{
+  counter-reset:recommendation;
+}
+
+.recommendation-card{
+  position:relative;
+  padding-left:4.25rem;
+}
+
+.recommendation-card::before{
+  counter-increment:recommendation;
+  content:counter(recommendation);
+  position:absolute;
+  left:1.35rem;
+  top:1.35rem;
+  width:2rem;
+  height:2rem;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:var(--garnet);
+  color:#fff;
+  font-family:"Space Grotesk","Segoe UI",Arial,sans-serif;
+  font-weight:800;
+}
+
+.tight-list{
+  margin-top:.85rem;
+  padding-left:1.15rem;
+}
+
+.tight-list li{
+  margin-bottom:.35rem;
+}
+
+@media(max-width:560px){
+  .recommendation-card{
+    padding-left:1.5rem;
+    padding-top:4rem;
+  }
+}
