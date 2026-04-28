@@ -18,6 +18,40 @@
 nav a.active{
   color:var(--accent);
   opacity:1;
+  background:rgba(252,165,165,.1);
+  border:1px solid rgba(252,165,165,.18);
+  border-radius:999px;
+  padding:.35rem .65rem;
+}
+
+p,
+li{
+  font-size:1rem;
+  line-height:1.7;
+}
+
+.wrap > p{
+  font-size:1.08rem;
+  line-height:1.75;
+  color:var(--text);
+}
+
+.card p,
+.compare-card p,
+.timeline-step p,
+.spectrum p,
+.spectrum-step p,
+.stat p,
+.note,
+.ref-list li{
+  font-size:.95rem;
+  line-height:1.65;
+}
+
+.card h3,
+.compare-card h3,
+.timeline-step b{
+  line-height:1.25;
 }
 
 .wrap > p,
