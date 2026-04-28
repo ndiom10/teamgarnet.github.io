@@ -295,6 +295,21 @@ AI can reduce time spent on repetitive tasks, but it only supports higher-level 
 
 <h2>Moderate Use vs. Overuse</h2>
 
+<div class="feature-panel analysis-feature corner-accent">
+<div>
+<h3><span class="serif-accent">Support Tool</span> vs Replacement Tool</h3>
+<p>The paper's deeper argument is that AI risk depends on use. The same system can help students learn when it explains, guides, or gives feedback, but it can weaken learning when it replaces reading, writing, reasoning, or verification.</p>
+</div>
+<div class="feature-side">
+<h3>The dividing line</h3>
+<ul>
+<li>Support: study guides, explanations, outlines.</li>
+<li>Risk: generated writing or completed assignments.</li>
+<li>Goal: preserve active student effort.</li>
+</ul>
+</div>
+</div>
+
 <div class="grid">
 
 <div class="card">
@@ -420,7 +435,7 @@ Our analysis suggests AI should be treated as a support tool, not a replacement 
 </footer>
 
 <script>
-const revealItems = document.querySelectorAll(".wrap > h1, .wrap > p, .wrap > h2, .card");
+const revealItems = document.querySelectorAll(".wrap > h1, .wrap > p, .wrap > h2, .card, .feature-panel, .spectrum");
 
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   revealItems.forEach((item) => item.classList.add("is-visible"));

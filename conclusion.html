@@ -287,6 +287,24 @@ h2{
   </div>
 
   <h2>Practical Recommendations</h2>
+
+  <div class="feature-panel conclusion-feature corner-accent">
+    <div>
+      <h3>Recommended <span class="serif-accent">Classroom</span> Strategies</h3>
+      <p>
+        The paper points toward structured AI use rather than unrestricted use or simple bans. The goal is to preserve the parts of learning that require effort: verification, explanation, revision, and independent problem-solving.
+      </p>
+    </div>
+    <div class="feature-side">
+      <h3>Design priority</h3>
+      <ul>
+        <li>Keep students actively involved.</li>
+        <li>Make AI use visible and verifiable.</li>
+        <li>Protect spaces for independent work.</li>
+      </ul>
+    </div>
+  </div>
+
   <div class="grid recommendation-grid">
     <div class="card recommendation-card">
       <h3>Require AI Verification</h3>
@@ -336,11 +354,8 @@ h2{
   </ul>
   </details>
 
-  <div class="card accent-left">
-    <h3>Final Synthesis</h3>
-    <p>
-      AI should scaffold learning, not replace the cognitive effort learning requires.
-    </p>
+  <div class="thesis-band">
+    <p>AI should scaffold <span class="serif-accent">learning</span>, not replace the cognitive effort learning requires.</p>
   </div>
 </div>
  
@@ -365,7 +380,7 @@ h2{
 </footer>
 
 <script>
-const revealItems = document.querySelectorAll(".wrap > h1, .wrap > p, .wrap > h2, .card, .ref-details");
+const revealItems = document.querySelectorAll(".wrap > h1, .wrap > p, .wrap > h2, .card, .feature-panel, .thesis-band, .ref-details");
 
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
