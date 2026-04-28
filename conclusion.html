@@ -110,10 +110,24 @@ h2{
 }
 .ref-list li{
   background:#121826;
-  padding:1rem 1.25rem;
-  border-radius:18px;
+  padding:.8rem 1rem;
+  border-radius:14px;
   border:1px solid #243042;
-  font-size:.93rem;
+  font-size:.82rem;
+  color:#cbd5e1;
+}
+.ref-details{
+  margin-top:2.5rem;
+  background:#0f1624;
+  border:1px solid #243042;
+  border-radius:18px;
+  padding:1rem 1.25rem;
+}
+.ref-details summary{
+  cursor:pointer;
+  color:#fca5a5;
+  font-family:"Space Grotesk","Segoe UI",Arial,sans-serif;
+  font-weight:700;
 }
 .site-footer{
   padding:2.25rem 1.5rem 1.5rem;
@@ -245,7 +259,7 @@ h2{
   <div class="card">
     <h3>Tools Are Rapidly Changing</h3>
     <p>
-      Even sources published one year apart reflect dramatically different technological landscapes. AI technologies are evolving rapidly, as wells as how they are being used. Any regulatory frameworks or educational policies must be designed to adapt as the technology continues to evolve.
+      Even sources published one year apart reflect dramatically different technological landscapes. AI technologies are evolving rapidly, as well as how they are being used. Any regulatory frameworks or educational policies must be designed to adapt as the technology continues to evolve.
     </p>
   </div>
   <div class="card">
@@ -254,8 +268,43 @@ h2{
       The goal is not to eliminate AI from education but to shift skill distribution without eroding critical skills. AI used as a personal tutor, study guide, or curriculum design tool represents the future this research points toward.
     </p>
   </div>
+
+  <h2>Practical Recommendations</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Require AI Verification</h3>
+      <p>
+        Students should document what AI produced, what they checked, and which sources or reasoning steps confirmed the output.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Use Oral Defenses</h3>
+      <p>
+        Short oral explanations can confirm whether students understand their work beyond an AI-generated final product.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Protect In-Class Skill Building</h3>
+      <p>
+        In-class writing, problem-solving, and discussion preserve space for students to practice core skills without immediate automation.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Grade the Process</h3>
+      <p>
+        Process-based assignments can ask students to show drafts, revisions, reasoning, failed attempts, and how their thinking changed.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Add Metacognitive Reflection</h3>
+      <p>
+        Reflection prompts should ask what AI helped with, what the student still had to figure out, and whether they could explain the answer without AI.
+      </p>
+    </div>
+  </div>
  
-  <h2>References</h2>
+  <details class="ref-details">
+  <summary>References</summary>
   <ul class="ref-list">
     <li>[1] Barton, Susan Ph.D. "A Review of Research on Student Achievement and Attitude In Computer and Calculator Enhanced Mathematics Courses." <em>Semantic Scholar</em>, 2000. https://atcm.mathandtech.org/EP/2000/ATCMP130/fullpaper.pdf</li>
     <li>[2] Bridgeman, Brent, et al. "Effects of Calculator Use on Scores on a Test of Mathematical Reasoning." <em>Journal of Educational Measurement</em>, vol. 32, no. 4, 1995, pp. 323–40. JSTOR, http://www.jstor.org/stable/143526</li>
@@ -268,6 +317,7 @@ h2{
     <li>[9] Tramer, Florian. "Trends in LLM-Generated Citations on Arxiv." <em>SPY Lab</em>, 3 Aug. 2025. spylab.ai/blog/hallucinations/</li>
     <li>[10] Yiğit, Mehmet Fatih. "The Silent Skill Erosion: Cognitive Offloading in the Age of Educational AI." <em>Research Gate</em>, Oct. 2025. www.researchgate.net/publication/397173967</li>
   </ul>
+  </details>
 </div>
  
 <footer class="site-footer">
