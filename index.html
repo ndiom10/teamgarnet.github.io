@@ -24,6 +24,7 @@ header{position:relative;min-height:100vh;display:flex;align-items:center;justif
 h1,h2,h3,.stat b{font-family:"Space Grotesk","Segoe UI",Arial,sans-serif}
 h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.03;margin-bottom:1rem;letter-spacing:-.045em;font-weight:700}
 .headline-line{display:block}
+.headline-nowrap{white-space:nowrap}
 .highlight{color:#fca5a5}
 .highlight-alt{color:#fecaca}
 .lead{font-size:1.22rem;max-width:820px;margin:0 auto 1.8rem;opacity:.92}
@@ -109,9 +110,8 @@ section{position:relative;padding:5rem 1.5rem}
 <div class="hero">
 <div class="badge reveal delay-1">University of Virginia - CS 4501 AI & Humanity</div>
 <h1>
-<span class="headline-line reveal delay-2">Does AI <span class="highlight">help students learn</span>,</span>
-<span class="headline-line reveal delay-3">or make learning <span class="highlight-alt">easier to</span></span>
-<span class="headline-line reveal delay-4"><span class="highlight-alt">avoid</span>?</span>
+<span class="headline-line reveal delay-2">Does AI <span class="highlight headline-nowrap">help students learn</span>,</span>
+<span class="headline-line reveal delay-3">or make learning <span class="highlight-alt headline-nowrap">easier to avoid</span>?</span>
 </h1>
 <p class="lead reveal delay-5">Team Garnet reviewed research on AI in education to ask whether generative tools simply shift skills, or whether overreliance causes deskilling through cognitive offloading, skill erosion, and the illusion of competence.</p>
 <div class="buttons reveal delay-6">

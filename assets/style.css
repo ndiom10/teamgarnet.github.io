@@ -56,16 +56,6 @@ li{
   line-height:1.25;
 }
 
-.wrap > p,
-.card p,
-.compare-card p,
-.timeline-step p,
-.spectrum p,
-.decision-item p,
-.check-item p{
-  max-width:72ch;
-}
-
 .card,
 .compare-card,
 .timeline-step,
@@ -178,6 +168,19 @@ li{
 
 .mt-1{
   margin-top:1rem;
+}
+
+.evidence-card{
+  column-count:2;
+  column-gap:2.5rem;
+}
+
+.evidence-card .mt-1{
+  margin-top:1rem;
+}
+
+.evidence-card p{
+  break-inside:avoid;
 }
 
 .data-point{
@@ -305,7 +308,7 @@ li{
 
 .image-feature{
   display:grid;
-  grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+  grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
   gap:0;
   align-items:stretch;
   margin-top:1rem;
@@ -319,7 +322,8 @@ li{
 .image-feature img{
   width:100%;
   height:100%;
-  min-height:360px;
+  max-height:540px;
+  min-height:340px;
   object-fit:cover;
   margin:0;
   border-radius:0;
@@ -327,8 +331,10 @@ li{
 
 .image-feature-copy{
   align-self:center;
-  margin-left:-3rem;
-  padding:2rem;
+  justify-self:start;
+  margin-left:-2rem;
+  max-width:520px;
+  padding:1.75rem;
   border-radius:22px;
   background:rgba(18,24,38,.94);
   border:1px solid rgba(252,165,165,.25);
@@ -351,12 +357,17 @@ li{
     grid-template-columns:1fr;
   }
 
+  .evidence-card{
+    column-count:1;
+  }
+
   .conclusion-feature .feature-side ul{
     grid-template-columns:1fr;
   }
 
   .image-feature-copy{
     margin-left:0;
+    max-width:none;
     border-radius:0;
   }
 }
