@@ -94,6 +94,16 @@ h2{
   border:1px solid #243042;
   margin-top:1rem;
 }
+.source-tag{
+  display:inline-block;
+  margin-bottom:.7rem;
+  padding:.25rem .55rem;
+  border-radius:999px;
+  background:rgba(252,165,165,.12);
+  color:#fca5a5;
+  font-size:.78rem;
+  font-weight:800;
+}
 
 .grid{
   display:grid;
@@ -113,6 +123,15 @@ h2{
 .stat h3{
   font-size:2rem;
   color:#fca5a5;
+}
+.stat p{
+  color:#eef2f7;
+  font-size:.95rem;
+}
+.note{
+  margin-top:1rem;
+  color:#94a3b8;
+  font-size:.95rem;
 }
 
 .site-footer{
@@ -201,15 +220,39 @@ h2{
 <h1>Research</h1>
 
 <p>
-This study investigates whether artificial intelligence improves education or gradually weakens academic skills through overreliance.
+This page summarizes the evidence behind our central question: does AI in education support learning, or does repeated reliance on AI weaken the skills students are supposed to develop?
 </p>
 
 <h2>Methodology</h2>
 
 <div class="card">
 <p>
-Our team reviewed historical learning technologies, modern AI studies, survey data, and peer-reviewed academic research. We compared earlier tools like calculators with modern systems such as ChatGPT to evaluate educational impact.
+Our team used a meta-study approach, reviewing historical research on calculators alongside recent studies about generative AI, cognitive offloading, writing patterns, critical thinking, hallucinated citations, and student experiences. We looked for recurring patterns across sources rather than relying on one study alone.
 </p>
+<p class="note">
+Because long-term educational AI data is still limited, our analysis focuses on early evidence, correlations, and repeated themes across current research.
+</p>
+</div>
+
+<h2>Evidence Snapshot</h2>
+
+<div class="grid">
+<div class="stat">
+<h3>950,965</h3>
+<p>papers analyzed by Liang et al. to estimate the rise of LLM-modified scientific writing.</p>
+</div>
+<div class="stat">
+<h3>17.5%</h3>
+<p>estimated LLM-modified sentence growth in computer science papers, the highest field in that study.</p>
+</div>
+<div class="stat">
+<h3>666</h3>
+<p>participants in Gerlich's study on AI use, cognitive offloading, and critical thinking.</p>
+</div>
+<div class="stat">
+<h3>1 in 4,000</h3>
+<p>references flagged as possibly hallucinated in Tramèr's arXiv citation analysis.</p>
+</div>
 </div>
 
 <h2>Timeline of Sources</h2>
@@ -220,31 +263,93 @@ Our team reviewed historical learning technologies, modern AI studies, survey da
 </div>
 
   
-<h2>Key Findings</h2>
+<h2>Key Studies</h2>
+
+<div class="grid">
+
+<div class="card">
+<span class="source-tag">Gerlich 2025</span>
+<h3>AI use, offloading, and critical thinking</h3>
+<p>
+Gerlich found a negative correlation between frequent AI use and critical thinking performance, with cognitive offloading acting as a major mediating factor. The study does not prove causation, but it strongly supports the concern that outsourcing thought can reduce active reasoning.
+</p>
+</div>
+
+<div class="card">
+<span class="source-tag">Liang 2024</span>
+<h3>LLMs are changing academic writing</h3>
+<p>
+Liang et al. analyzed nearly one million scientific papers and found a rapid rise in LLM-modified writing after ChatGPT's release, especially in computer science. This suggests AI is already influencing expert writing at scale.
+</p>
+</div>
+
+<div class="card">
+<span class="source-tag">Galpin 2025</span>
+<h3>Scientific language is shifting</h3>
+<p>
+Galpin et al. found that AI influence appears in whole clusters of stylistic words, not just isolated terms. This supports the idea that AI can shape writing norms and make academic language more homogeneous.
+</p>
+</div>
+
+<div class="card">
+<span class="source-tag">Tramèr 2025</span>
+<h3>Hallucinated citations reveal verification risk</h3>
+<p>
+Tramèr's arXiv analysis identified possibly hallucinated citations in published papers. Even if the percentage is small, the pattern matters because it shows what happens when citation checking is offloaded or skipped.
+</p>
+</div>
+
+</div>
+
+<h2>Major Findings</h2>
 
 <div class="grid">
 
 <div class="card">
 <h3>Cognitive Skills</h3>
 <p>
-Frequent AI dependence may reduce active reasoning, memory retention, and persistence through difficult tasks.
+Frequent AI dependence may reduce active reasoning, memory retention, and persistence through difficult tasks. The key risk is not one-time use, but repeated avoidance of mental effort.
 </p>
 </div>
 
 <div class="card">
-<h3>Writing & Language</h3>
+<h3>Writing and Language</h3>
 <p>
-Recent studies found increasing AI-influenced language patterns in academic and professional writing.
+AI can help students draft and revise, but overuse may weaken voice, originality, and language diversity. Current research already shows AI-shaped writing patterns in scientific work.
+</p>
+</div>
+
+<div class="card">
+<h3>Illusion of Competence</h3>
+<p>
+Students may feel capable because AI helps them produce strong outputs, even when they cannot explain or recreate the reasoning independently.
 </p>
 </div>
 
 <div class="card">
 <h3>Educational Benefits</h3>
 <p>
-AI can provide tutoring support, personalized learning, accessibility tools, and teacher assistance.
+AI can still be valuable as a tutor, study guide, accessibility support, and teacher-assistance tool when it encourages reflection instead of replacing thinking.
 </p>
 </div>
 
+</div>
+
+<h2>Helpful Use vs Risky Use</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Helpful Uses</h3>
+<p>
+Explaining concepts, creating study guides, generating outlines, giving feedback, supporting accessibility, and helping students reflect on their own reasoning.
+</p>
+</div>
+<div class="card">
+<h3>Risky Uses</h3>
+<p>
+Generating final writing, summarizing short readings without engagement, completing assignments, forming opinions, or accepting AI citations without verification.
+</p>
+</div>
 </div>
 
 <h2>Comparative Insight</h2>
@@ -253,6 +358,9 @@ AI can provide tutoring support, personalized learning, accessibility tools, and
 <p>
 Unlike calculators, AI performs higher-order tasks such as writing, summarizing, brainstorming, and reasoning. This creates major opportunities, but also higher risks of deskilling.
 </p>
+<p class="note">
+The calculator analogy matters historically, but it does not cleanly apply. Calculators mainly automate computation, while AI can automate the cognitive labor education is designed to cultivate.
+</p>
 </div>
 
 
@@ -260,9 +368,11 @@ Unlike calculators, AI performs higher-order tasks such as writing, summarizing,
 <div class="grid">
 <div class="card">
 <p>
-AI is most valuable when it supports learning rather than replacing struggle, reflection, and independent thought.
+AI is most valuable when it supports learning rather than replacing struggle, reflection, verification, and independent thought. The evidence points toward structured use, not uncritical adoption or simple bans.
 </p>
 </div>
+</div>
+
 </div>
 
 <footer class="site-footer">
