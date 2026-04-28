@@ -119,13 +119,61 @@ h2{
   font-weight:700;
 }
 
-footer{
-  text-align:center;
-  padding:2rem;
+.site-footer{
+  padding:2.25rem 1.5rem 1.5rem;
+  border-top:1px solid #1f2937;
+  color:#cbd5e1;
+  background:#080c14;
+}
+.footer-wrap{
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:3rem;
+  align-items:start;
+}
+.footer-info h3{
+  color:#eef2f7;
+  margin-bottom:.5rem;
+  font-size:1rem;
+}
+.footer-info p{
+  margin-bottom:.35rem;
   color:#94a3b8;
+  font-size:.86rem;
+}
+.footer-label{
+  font-family:"Space Grotesk","Segoe UI",Arial,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.7rem;
+  color:#fca5a5;
+  margin-bottom:.65rem;
+}
+.footer-team{
+  justify-self:end;
+}
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(2,max-content);
+  gap:.35rem 2rem;
+}
+.team-grid span{
+  color:#cbd5e1;
+  font-size:.88rem;
+}
+.footer-bottom{
+  max-width:1150px;
+  margin:1.5rem auto 0;
+  padding-top:1rem;
+  border-top:1px solid #1f2937;
+  text-align:center;
+  color:#64748b;
+  font-size:.82rem;
 }
 
-@media(max-width:768px){
+@media(max-width:560px){
   h1{font-size:2.3rem;}
   .navwrap{
     align-items:flex-start;
@@ -133,6 +181,8 @@ footer{
     gap:.75rem;
   }
   nav ul{gap:.65rem;}
+  .footer-wrap{grid-template-columns:1fr;}
+  .team-grid{grid-template-columns:1fr;}
 }
 </style>
 </head>
@@ -252,8 +302,24 @@ Our analysis suggests AI should be treated as a support tool, not a replacement 
 
 </div>
 
-<footer>
-Team Garnet • University of Virginia • AI & Humanity
+<footer class="site-footer">
+<div class="footer-wrap">
+<div class="footer-info">
+<h3>AI and Deskilling in Education</h3>
+<p>AI &amp; Humanity &middot; CS 4501 &middot; 2026</p>
+</div>
+<div class="footer-team">
+<p class="footer-label">The Garnet Team</p>
+<div class="team-grid">
+<span>Stella Hession</span>
+<span>Hannah Cohen</span>
+<span>Nifasha Diomede</span>
+<span>Qiaojing Huang</span>
+<span>Ryan Russo</span>
+</div>
+</div>
+</div>
+<div class="footer-bottom">&copy; 2026 Team Garnet - University of Virginia</div>
 </footer>
 
 </body>
