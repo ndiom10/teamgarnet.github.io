@@ -69,6 +69,15 @@ h1{
   font-size:3rem;
   margin-bottom:1rem;
 }
+.reveal-on-scroll{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .6s ease, transform .6s ease;
+}
+.reveal-on-scroll.is-visible{
+  opacity:1;
+  transform:translateY(0);
+}
 h2{
   margin-top:2.5rem;
   margin-bottom:.8rem;
@@ -191,6 +200,13 @@ h2{
   nav ul{gap:.65rem;}
   .footer-wrap{grid-template-columns:1fr;}
   .team-grid{grid-template-columns:1fr;}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal-on-scroll{
+    opacity:1;
+    transform:none;
+    transition:none;
+  }
 }
 </style>
 </head>
@@ -339,6 +355,27 @@ h2{
   </div>
   <div class="footer-bottom">&copy; 2026 Team Garnet - University of Virginia</div>
 </footer>
+
+<script>
+const revealItems = document.querySelectorAll(".wrap > h1, .wrap > p, .wrap > h2, .card, .ref-details");
+
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  revealItems.forEach((item) => item.classList.add("is-visible"));
+} else {
+  revealItems.forEach((item) => item.classList.add("reveal-on-scroll"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach((item) => observer.observe(item));
+}
+</script>
 </body>
 </html>
  
