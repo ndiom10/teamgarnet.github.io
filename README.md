@@ -42,4 +42,4 @@ University of Virginia students examining the future relationship between AI, ed
 
 ## Live Website
 
-https://teamgarnet.github.io
+https://ndiom10.github.io/teamgarnet.github.io/
