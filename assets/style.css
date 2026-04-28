@@ -176,6 +176,10 @@ li{
   margin-bottom:.35rem;
 }
 
+.mt-1{
+  margin-top:1rem;
+}
+
 .serif-accent{
   font-family:"Playfair Display",Georgia,serif;
   font-style:italic;
