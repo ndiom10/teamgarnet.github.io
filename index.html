@@ -3,39 +3,70 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI and Deskilling in Education | Home</title>
+<title>AI and Deskilling in Education | Team Garnet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Inter,Arial,sans-serif;background:#0b0f17;color:#eef2f7;line-height:1.6}
-nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(11,15,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid #1f2937}
+body{font-family:"Manrope","Segoe UI",Arial,sans-serif;background:#0b0f17;color:#eef2f7;line-height:1.6}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 20%,rgba(122,0,25,.22),transparent 28%),radial-gradient(circle at 85% 10%,rgba(252,165,165,.14),transparent 24%)}
+nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(11,15,23,.9);backdrop-filter:blur(10px);border-bottom:1px solid #1f2937}
 .navwrap{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem}
-.logo{font-weight:800;letter-spacing:.5px}
+.logo{font-family:"Space Grotesk","Segoe UI",Arial,sans-serif;font-weight:700;letter-spacing:.3px}
 nav ul{display:flex;gap:1rem;list-style:none;flex-wrap:wrap}
-nav a{color:#eef2f7;text-decoration:none;font-size:.95rem;opacity:.9}
-nav a:hover{opacity:1}
-header{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:7rem 1.5rem 3rem;background:radial-gradient(circle at top right,#7a0019 0,#111827 40%,#0b0f17 75%)}
-.hero{max-width:950px;text-align:center}
-.badge{display:inline-block;padding:.45rem .9rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;margin-bottom:1rem;font-size:.9rem}
-h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:1.05;margin-bottom:1rem}
-.lead{font-size:1.2rem;max-width:760px;margin:0 auto 1.8rem;opacity:.92}
+nav a{color:#eef2f7;text-decoration:none;font-size:.95rem;opacity:.88}
+nav a:hover{opacity:1;color:#fca5a5}
+header{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:7rem 1.5rem 4rem;background:linear-gradient(135deg,#0b0f17 0%,#111827 48%,#260611 100%)}
+.hero{max-width:1050px;text-align:center}
+.badge{display:inline-block;padding:.45rem .9rem;border:1px solid rgba(255,255,255,.25);border-radius:999px;margin-bottom:1rem;font-size:.9rem;color:#fecaca;background:rgba(255,255,255,.04)}
+h1,h2,h3,.stat b{font-family:"Space Grotesk","Segoe UI",Arial,sans-serif}
+h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.03;margin-bottom:1rem;letter-spacing:-.045em;font-weight:700}
+.highlight{color:#fca5a5}
+.highlight-alt{color:#fecaca}
+.lead{font-size:1.22rem;max-width:820px;margin:0 auto 1.8rem;opacity:.92}
 .buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-.btn{padding:.95rem 1.35rem;border-radius:14px;text-decoration:none;font-weight:700}
-.primary{background:#fff;color:#111827}.secondary{border:1px solid rgba(255,255,255,.28);color:#fff}
-section{padding:5rem 1.5rem}.wrap{max-width:1150px;margin:auto}
-.section-title{font-size:2rem;margin-bottom:.7rem}.muted{opacity:.82}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin-top:2rem}
-.card{background:#121826;border:1px solid #243042;padding:1.4rem;border-radius:18px}
-.card h3{margin-bottom:.55rem}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:2rem}
-.stat{background:#121826;padding:1.2rem;border-radius:18px;border:1px solid #243042;text-align:center}
-.stat b{display:block;font-size:2rem}
-footer{padding:2rem;text-align:center;border-top:1px solid #1f2937;color:#cbd5e1}
-@media(max-width:760px){nav ul{gap:.6rem} .navwrap{align-items:flex-start;flex-direction:column;gap:.75rem}}
+.btn{padding:.95rem 1.35rem;border-radius:14px;text-decoration:none;font-weight:800;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:#fff;color:#111827}
+.secondary{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.04)}
+section{position:relative;padding:5rem 1.5rem}
+.wrap{max-width:1150px;margin:auto}
+.eyebrow{color:#fca5a5;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;margin-bottom:.5rem}
+.section-title{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin-bottom:.8rem;letter-spacing:-.025em}
+.muted{opacity:.82;max-width:830px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1rem;margin-top:2.2rem}
+.stat{background:linear-gradient(180deg,#151c2b,#101722);padding:1.25rem;border-radius:20px;border:1px solid #243042;text-align:left}
+.stat b{display:block;font-size:2.25rem;line-height:1;color:#fca5a5;margin-bottom:.45rem}
+.stat span{display:block;color:#cbd5e1;font-size:.95rem}
+.callout{margin-top:2rem;padding:1.35rem 1.5rem;border:1px solid rgba(252,165,165,.45);background:rgba(122,0,25,.2);border-radius:22px}
+.callout strong{color:#fecaca}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.15rem;margin-top:2rem}
+.card{background:#121826;border:1px solid #243042;padding:1.45rem;border-radius:20px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#fca5a5}
+.card h3{margin-bottom:.55rem;font-size:1.15rem}
+.card p{color:#cbd5e1}
+.number{display:inline-flex;align-items:center;justify-content:center;width:2.15rem;height:2.15rem;border-radius:50%;background:#7a0019;color:#fff;font-weight:800;margin-bottom:.85rem}
+.split{display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;align-items:stretch;margin-top:2rem}
+.panel{background:#121826;border:1px solid #243042;border-radius:24px;padding:1.6rem}
+.comparison{display:grid;gap:.85rem;margin-top:1rem}
+.row{display:grid;grid-template-columns:120px 1fr;gap:1rem;align-items:center}
+.bar{height:16px;border-radius:999px;background:#1f2937;overflow:hidden}
+.bar span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#fca5a5,#ef4444)}
+.small{font-size:.9rem;color:#cbd5e1}
+.site-card{display:block;color:inherit;text-decoration:none}
+.site-card h3{color:#fff}
+footer{position:relative;padding:2rem;text-align:center;border-top:1px solid #1f2937;color:#cbd5e1}
+@media(max-width:800px){
+  .navwrap{align-items:flex-start;flex-direction:column;gap:.75rem}
+  nav ul{gap:.65rem}
+  .split{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-  
 <nav>
 <div class="navwrap">
 <div class="logo">Team Garnet</div>
@@ -48,55 +79,112 @@ footer{padding:2rem;text-align:center;border-top:1px solid #1f2937;color:#cbd5e1
 </ul>
 </div>
 </nav>
-  
+
 <header>
 <div class="hero">
-<div class="badge">University of Virginia • CS 4501 AI & Humanity</div>
-<h1>AI and Deskilling in Education</h1>
-<p class="lead">A research project exploring whether artificial intelligence enhances learning or quietly weakens critical academic skills through overreliance, cognitive offloading, and automation.</p>
+<div class="badge">University of Virginia - CS 4501 AI & Humanity</div>
+<h1>Does AI <span class="highlight">help students learn</span>, or make learning <span class="highlight-alt">easier to avoid</span>?</h1>
+<p class="lead">Team Garnet reviewed research on AI in education to ask whether generative tools simply shift skills, or whether overreliance causes deskilling through cognitive offloading, skill erosion, and the illusion of competence.</p>
 <div class="buttons">
-<a class="btn primary" href="research.html">View Findings</a>
-<a class="btn secondary" href="#about">Learn More</a>
+<a class="btn primary" href="#findings">View Key Findings</a>
+<a class="btn secondary" href="research.html">Read the Research</a>
 </div>
 </div>
 </header>
-  
+
 <section id="about">
 <div class="wrap">
-<h2 class="section-title">Abstract</h2>
-<p class="muted">This project examines how AI tools are changing student learning, writing, reasoning, and confidence. Through comparative research and meta-analysis, Team Garnet investigates whether AI shifts skill distribution productively or contributes to deskilling and skill erosion.</p>
+<p class="eyebrow">Research Question</p>
+<h2 class="section-title">AI is not just another calculator.</h2>
+<p class="muted">Earlier classroom tools mostly automated narrow tasks. AI can summarize, write, brainstorm, reason, and generate answers across subjects. That broader reach creates real educational benefits, but it also raises a harder question: what happens when students stop practicing the skills school is supposed to build?</p>
+
 <div class="stats">
-<div class="stat"><b>5</b>Team Members</div>
-<div class="stat"><b>10+</b>Sources Reviewed</div>
-<div class="stat"><b>4</b>Main Risk Areas</div>
+<div class="stat"><b>10+</b><span>sources reviewed across education, cognition, language, and AI policy</span></div>
+<div class="stat"><b>950,965</b><span>scientific papers analyzed in one study measuring LLM-modified writing</span></div>
+<div class="stat"><b>17.5%</b><span>estimated growth of LLM-modified sentences in computer science papers</span></div>
+<div class="stat"><b>666</b><span>participants in a study connecting AI use, offloading, and critical thinking</span></div>
+</div>
+
+<div class="callout">
+<strong>The core finding:</strong> AI can support learning when it scaffolds thinking, but it becomes risky when it replaces effort, verification, and independent problem-solving.
 </div>
 </div>
 </section>
-  
+
+<section id="findings">
+<div class="wrap">
+<p class="eyebrow">What We Found</p>
+<h2 class="section-title">Deskilling happens when convenience replaces practice.</h2>
+<p class="muted">Across the sources we reviewed, the same pattern appeared: moderate AI use can help students, but passive dependence can weaken the cognitive habits that produce real understanding.</p>
+
+<div class="grid">
+<div class="card">
+<div class="number">1</div>
+<h3>Cognitive offloading can become overreliance</h3>
+<p>AI reduces mental load, but students lose practice when they let it handle the reasoning, memory, or problem-solving process for them.</p>
+</div>
+<div class="card">
+<div class="number">2</div>
+<h3>The illusion of competence hides weak understanding</h3>
+<p>Students may produce polished work with AI support while still being unable to explain, defend, or recreate the thinking independently.</p>
+</div>
+<div class="card">
+<div class="number">3</div>
+<h3>Writing and language are already shifting</h3>
+<p>Large-scale studies show rising LLM influence in scientific writing, suggesting AI can reshape not only individual assignments but broader writing norms.</p>
+</div>
+<div class="card">
+<div class="number">4</div>
+<h3>Balanced policy matters more than simple bans</h3>
+<p>The best classroom approach preserves productive struggle while still allowing AI to serve as a tutor, study guide, accessibility tool, and feedback system.</p>
+</div>
+</div>
+</div>
+</section>
+
 <section>
 <div class="wrap">
-<h2 class="section-title">Core Questions</h2>
-<div class="grid">
-<div class="card"><h3>Critical Thinking</h3><p>Does reliance on AI reduce independent reasoning and evaluation?</p></div>
-<div class="card"><h3>Writing Quality</h3><p>Are originality and language diversity being replaced by model-generated patterns?</p></div>
-<div class="card"><h3>Creativity</h3><p>Can AI support brainstorming without weakening authentic imagination?</p></div>
-<div class="card"><h3>Education Policy</h3><p>How should schools regulate AI to preserve learning outcomes?</p></div>
+<p class="eyebrow">Why It Matters</p>
+<h2 class="section-title">The risk is not one bad answer. It is a weaker learner.</h2>
+<div class="split">
+<div class="panel">
+<h3>Calculator comparison</h3>
+<p class="small">Historical calculator studies generally found improved performance without clear damage to conceptual reasoning. AI is different because it can automate the exact skills education depends on: writing, evaluating, brainstorming, and explaining.</p>
+<div class="comparison">
+<div class="row">
+<strong>Calculator</strong>
+<div><div class="bar"><span style="width:35%"></span></div><p class="small">Mostly automates computation</p></div>
+</div>
+<div class="row">
+<strong>AI</strong>
+<div><div class="bar"><span style="width:90%"></span></div><p class="small">Can automate broad cognitive work</p></div>
+</div>
+</div>
+</div>
+<div class="panel">
+<h3>Team Garnet position</h3>
+<p>AI should be used as a learning scaffold, not a shortcut. Students should think first, attempt first, verify outputs, and use AI to deepen understanding rather than avoid the difficult parts of learning.</p>
+<div class="callout">
+<strong>In short:</strong> use AI second, not first.
+</div>
+</div>
 </div>
 </div>
 </section>
-  
+
 <section>
 <div class="wrap">
-<h2 class="section-title">Navigate the Study</h2>
+<p class="eyebrow">Explore the Study</p>
+<h2 class="section-title">Read the project by section.</h2>
 <div class="grid">
-<div class="card"><h3>Background</h3><p>History of technology and definitions of deskilling.</p></div>
-<div class="card"><h3>Research</h3><p>Methodology, evidence, and major findings.</p></div>
-<div class="card"><h3>Analysis</h3><p>Comparative insights, student perspective, limitations.</p></div>
-<div class="card"><h3>Conclusion</h3><p>Recommendations, references, and future outlook.</p></div>
+<a class="card site-card" href="background.html"><h3>Background</h3><p>Definitions of deskilling, cognitive offloading, skill erosion, and historical classroom tools.</p></a>
+<a class="card site-card" href="research.html"><h3>Research</h3><p>Methodology, source timeline, evidence, and major findings from the meta-study.</p></a>
+<a class="card site-card" href="analysis.html"><h3>Analysis</h3><p>Benefits, risks, student perspective, and the comparison between calculators and AI.</p></a>
+<a class="card site-card" href="conclusion.html"><h3>Conclusion</h3><p>Recommendations for structured AI use, classroom policy, and future research.</p></a>
 </div>
 </div>
 </section>
-  
-<footer>Team Garnet • University of Virginia • AI & Humanity</footer>
+
+<footer>Team Garnet - University of Virginia - AI & Humanity</footer>
 </body>
 </html>
