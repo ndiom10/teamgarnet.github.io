@@ -180,6 +180,13 @@ li{
   margin-top:1rem;
 }
 
+.data-point{
+  color:#fde68a;
+  font-family:inherit;
+  font-weight:500;
+  white-space:nowrap;
+}
+
 .serif-accent{
   font-family:"Playfair Display",Georgia,serif;
   font-style:italic;
