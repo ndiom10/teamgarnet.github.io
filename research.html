@@ -243,6 +243,87 @@ h2{
     transition:none;
   }
 }
+.quote-title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-grid {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 1rem;
+}
+
+.quote-card {
+  position: relative;
+  background: linear-gradient(135deg, #121826, #0f1724);
+  border-radius: 22px;
+  padding: 2rem 2rem 2rem 7rem;
+  border: 1px solid #243042;
+  overflow: hidden;
+}
+
+.quote-number {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.quote-icon {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 3rem;
+  opacity: 0.35;
+}
+
+.quote-text {
+  font-size: 1.1rem;
+  color: #eef2f7;
+  line-height: 1.75;
+  max-width: 850px;
+}
+
+.quote-author {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.quote-blue {
+  border-color: #60a5fa;
+  box-shadow: inset 5px 0 0 #60a5fa;
+}
+
+.quote-blue .quote-number,
+.quote-blue .quote-icon {
+  color: #60a5fa;
+}
+
+.quote-purple {
+  border-color: #c084fc;
+  box-shadow: inset 5px 0 0 #c084fc;
+}
+
+.quote-purple .quote-number,
+.quote-purple .quote-icon {
+  color: #c084fc;
+}
+
+.quote-yellow {
+  border-color: #facc15;
+  box-shadow: inset 5px 0 0 #facc15;
+}
+
+.quote-yellow .quote-number,
+.quote-yellow .quote-icon {
+  color: #facc15;
+}
 </style>
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -309,6 +390,39 @@ Galpin et al. found that AI influence appears in whole clusters of stylistic wor
 Favero et al. (2026) argue that AI in education affects not just performance, but cognition, agency, and emotional engagement.
 </p>
 </div>
+
+</div>
+
+<h2 class="quote-title">Key Quotes</h2>
+
+<div class="quote-grid">
+
+  <div class="quote-card quote-blue">
+    <div class="quote-number">01</div>
+    <div class="quote-icon">✦</div>
+    <p class="quote-text">
+      “Scientific English is undergoing unprecedented language change. Our observations indicate that these changes are not limited to individual lexical entries but extend to entire lexical groups.”
+    </p>
+    <p class="quote-author">— Riley Galpin, Research Student, 2025</p>
+  </div>
+
+  <div class="quote-card quote-purple">
+    <div class="quote-number">02</div>
+    <div class="quote-icon">◐</div>
+    <p class="quote-text">
+      “Despite AI’s perceived benefits, UX practitioners overwhelmingly agree that AI cannot fully replace human cognition, but rather serves as a complement to human expertise.”
+    </p>
+    <p class="quote-author">— Prakash Shukla, PhD Student, 2025</p>
+  </div>
+
+  <div class="quote-card quote-yellow">
+    <div class="quote-number">03</div>
+    <div class="quote-icon">⚖</div>
+    <p class="quote-text">
+      “Ultimately, an ethical use of AI in education is about preserving education as a space for autonomy, critical inquiry, and democratic formation.”
+    </p>
+    <p class="quote-author">— Lucile Favero, PhD Student, 2026</p>
+  </div>
 
 </div>
 
